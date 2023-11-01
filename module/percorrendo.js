@@ -101,4 +101,18 @@ const getCidades = function(estadoS){
     })
     return jsonCidades
 }
-console.log(getCidades('AC'))
+console.log(getListaDeEstados())
+console.log(getDadosEstado('SP'))
+console.log(getCapitalEstado('AM'))
+console.log(getEstadosRegiao('norte'))
+console.log(getCapitalPais())
+console.log(getCidades('SP'))
+
+module.exports = {
+    getListaDeEstados,
+    getDadosEstado,
+    getCapitalEstado,
+    getEstadosRegiao,
+    getCapitalPais,
+    getCidades
+}
